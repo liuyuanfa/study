@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="temp">11111</div>
-    
-</body>
-<script>
-    function queryClassName( name) {  
-    var tag = document.getElementsByTagName("*") || document.all;
-        var array = [];
-        for (var i = 0; i < tag.length; i++) {
-            if(tag[i].className == name){
-                array.push(tag[i]);
-            };
+  </body>
+  <script>
+    function queryClassName(name) {
+      var tag = document.getElementsByTagName("*") || document.all;
+      var array = [];
+      for (var i = 0; i < tag.length; i++) {
+        if (tag[i].className == name) {
+          array.push(tag[i]);
         }
+      }
       return array;
-  }
-  console.log(queryClassName('temp'))
+    }
+    console.log(queryClassName("temp"));
 
-  var temp = document.getElementsByClassName('temp')
-  console.log(temp)
-</script>
+    var temp = document.getElementsByClassName("temp");
+    console.log(temp);
+  </script>
 </html>
